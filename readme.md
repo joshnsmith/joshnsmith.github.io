@@ -2,7 +2,7 @@
 
 **Course:** WDD 230
 
-**Instructor:** SMOE
+**Instructor:** Mike Odom
 
 **Student:** Josh Smith
 
