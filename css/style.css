@@ -84,6 +84,11 @@ li {
   font-family: "Roboto Slab", serif;
 }
 
+ul li a {
+  color: #1c77c3;
+  text-decoration: none;
+}
+
 hr {
   margin: 0;
   width: 90%;
