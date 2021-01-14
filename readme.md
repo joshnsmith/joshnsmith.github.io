@@ -35,3 +35,5 @@ All were screenshots on my phone.
 [Logo](https://www.iconfinder.com/icons/4908723/cloud_cold_rain_rainy_season_weather_winter_icon)
 
 [Hamburger](https://www.iconfinder.com/icons/1891012/blue_cercle_hamburger_list_mavigation_menu_stack_icon)
+
+Screenshot from [Coolors](https://coolors.co/add7f6-d6e9ff-87bfff-1f87ff-00397a)
