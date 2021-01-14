@@ -23,3 +23,15 @@
 [Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshnsmith.github.io%2F)
 
 [Wave](https://wave.webaim.org/report#/https://joshnsmith.github.io)
+
+### Assets References
+
+**Design Principles**
+
+All were screenshots on my phone.
+
+**Site Plan**
+
+[Logo](https://www.iconfinder.com/icons/4908723/cloud_cold_rain_rainy_season_weather_winter_icon)
+
+[Hamburger](https://www.iconfinder.com/icons/1891012/blue_cercle_hamburger_list_mavigation_menu_stack_icon)
