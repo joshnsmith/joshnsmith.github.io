@@ -11,7 +11,7 @@ ELEM.bannerClose = document.getElementById('close-banner');
 /* EVENT LISTENERS */
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (new Date().getDay() === 3) {
+    if (new Date().getDay() === 5) {
         ELEM.banner.classList.remove('banner-hide');
     }
 })
