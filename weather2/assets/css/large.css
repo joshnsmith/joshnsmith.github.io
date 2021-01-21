@@ -4,7 +4,7 @@
   }
 
   .content-container {
-    width: 60%;
+    width: 70%;
   }
 
   nav ul {
@@ -12,5 +12,26 @@
   }
   nav ul li {
     display: block;
+  }
+  .article img {
+    width: 350px;
+    float: right;
+    padding-right: 10px;
+  }
+  .article p {
+    font-size: 1.25em;
+  }
+
+  .contact-content {
+    display: flex;
+  }
+
+  .map {
+    flex: 1;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex: 1;
   }
 }

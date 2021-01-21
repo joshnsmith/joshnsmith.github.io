@@ -12,4 +12,13 @@
   header p {
     font-size: 1.25em;
   }
+
+  .hero img {
+    height: 350px;
+  }
+
+  .summary {
+    position: absolute;
+    opacity: 0.6;
+  }
 }

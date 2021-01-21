@@ -5,8 +5,17 @@ const ELEM = {} || ELEM;
 ELEM.menuToggle = document.getElementById('nav-toggle');
 ELEM.menuIcon = document.getElementById('menu-icon');
 ELEM.navMenu = document.getElementById('nav-menu');
+ELEM.banner = document.getElementById('banner');
+ELEM.bannerClose = document.getElementById('close-banner');
 
 /* EVENT LISTENERS */
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (new Date().getDay() === 3) {
+        ELEM.banner.classList.remove('banner-hide');
+    }
+})
+
 
 ELEM.menuToggle.onclick = () => {
     ELEM.menuIcon.classList.toggle('close-menu');
@@ -19,4 +28,8 @@ ELEM.menuToggle.onclick = () => {
     } else {
         ELEM.menuIcon.src = "./assets/img/close-icon.png";
     }
+}
+
+ELEM.bannerClose.onclick = () => {
+    ELEM.banner.classList.add('banner-hide');
 }
