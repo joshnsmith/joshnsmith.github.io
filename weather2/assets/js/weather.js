@@ -1,0 +1,22 @@
+const ELEM = {} || ELEM;
+
+/* DOCUMENT ELEMENTS */
+
+ELEM.menuToggle = document.getElementById('nav-toggle');
+ELEM.menuIcon = document.getElementById('menu-icon');
+ELEM.navMenu = document.getElementById('nav-menu');
+
+/* EVENT LISTENERS */
+
+ELEM.menuToggle.onclick = () => {
+    ELEM.menuIcon.classList.toggle('close-menu');
+    for (var elem of ELEM.navMenu.children) {
+        elem.classList.toggle('show-menu');
+    }
+    if (ELEM.menuIcon.src.includes('close-icon')) {
+        ELEM.menuIcon.src = "./assets/img/menu-icon.png"
+
+    } else {
+        ELEM.menuIcon.src = "./assets/img/close-icon.png";
+    }
+}
