@@ -1,0 +1,41 @@
+@media (min-width: 60em) {
+  nav ul li:first-child {
+    display: none;
+  }
+
+  .content-container {
+    max-width: 80em;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    display: block;
+  }
+  .article img {
+    width: 350px;
+    float: right;
+    padding-right: 10px;
+  }
+  .article p {
+    font-size: 1.25em;
+  }
+
+  .contact-content {
+    display: flex;
+  }
+
+  .map {
+    flex: 1;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex: 1;
+  }
+
+  .hero img {
+    height: 450px !important;
+  }
+}

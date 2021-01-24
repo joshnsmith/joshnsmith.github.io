@@ -1,0 +1,17 @@
+@media (min-width: 60em) {
+  nav ul li:first-child {
+    display: none;
+  }
+
+  .content-container {
+    width: 60%;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    display: block;
+  }
+}
