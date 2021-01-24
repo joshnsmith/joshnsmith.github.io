@@ -21,4 +21,8 @@
     position: absolute;
     opacity: 0.6;
   }
+
+  .info img {
+    height: 50px;
+  }
 }
