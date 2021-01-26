@@ -18,9 +18,9 @@ header {
 header img {
   position: absolute;
   width: 100px;
-  left: 20%;
   top: 50%;
   transform: translateY(-50%);
+  display: none;
 }
 
 header h1 {
@@ -42,10 +42,6 @@ header p {
   margin: 0px;
   padding: 10px;
   font-family: "Quattrocento Sans", sans-serif;
-}
-
-header img {
-  display: none;
 }
 
 nav {

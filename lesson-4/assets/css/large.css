@@ -1,4 +1,9 @@
 @media (min-width: 60em) {
+  header img {
+    left: 15%;
+    width: 100px;
+  }
+
   nav ul li:first-child {
     display: none;
   }

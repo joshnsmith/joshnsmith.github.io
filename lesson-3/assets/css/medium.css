@@ -5,8 +5,11 @@
 
   header img {
     position: absolute;
-    width: 80px;
-    left: 10px;
+    width: 100px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
   }
 
   header p {
