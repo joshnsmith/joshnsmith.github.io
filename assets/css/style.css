@@ -75,7 +75,7 @@ h1 {
     h1
 } */
 
-ul {
+ol {
   padding: 20px;
 }
 
@@ -84,7 +84,7 @@ li {
   font-family: "Roboto Slab", serif;
 }
 
-ul li a {
+ol li a {
   color: #1c77c3;
   text-decoration: none;
 }
@@ -97,6 +97,11 @@ hr {
 h2 {
   font-family: "Ubuntu", sans-serif;
   font-size: 2em;
+}
+
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 440px) {
