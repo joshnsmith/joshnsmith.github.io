@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-
 ELEM.menuToggle.onclick = () => {
     ELEM.menuIcon.classList.toggle('close-menu');
     for (var elem of ELEM.navMenu.children) {
@@ -30,6 +29,8 @@ ELEM.menuToggle.onclick = () => {
     }
 }
 
-ELEM.bannerClose.onclick = () => {
-    ELEM.banner.classList.add('banner-hide');
+if (ELEM.bannerClose !== null) {
+    ELEM.bannerClose.onclick = () => {
+        ELEM.banner.classList.add('banner-hide');
+    }
 }

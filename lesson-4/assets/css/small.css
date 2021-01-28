@@ -236,6 +236,53 @@ main section h2 {
   width: 100%;
 }
 
+.pictures-h1 {
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 80em;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  background-color: #d6e9ff;
+}
+
+.picture-card {
+  margin: 0px 10px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.picture-card img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.img-text {
+  padding: 10px;
+  font-size: 1.25em;
+  font-family: sans-serif;
+}
+
+.picture-card picture img {
+  opacity: 1;
+  transition: opacity 0.75s;
+}
+
+.picture-card picture img[data-src] {
+  opacity: 0.5;
+}
+
 footer {
   padding: 20px 0px;
   background-color: #00397a;
