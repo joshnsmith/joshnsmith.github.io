@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather it Together | Town of Preston Idaho</title>
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/small.css">
+    <link rel="stylesheet" href="./assets/css/medium.css">
+    <link rel="stylesheet" href="./assets/css/large.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Fraunces:wght@500&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="banner banner-hide" id="banner">
+            Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+            <a href="#" id="close-banner"><span class="close">&times;</span></a>
+        </div>
+        <div class="content-container">
+            <img src="../assets/img/site-logo.png" alt="">
+            <h1>
+                Weather it Together
+            </h1>
+            <p>
+                Weather updates and more!
+            </p>
+        </div>
+    </header>
+    <nav>
+        <div class="content-container">
+            <ul id="nav-menu">
+                <li><a id="nav-toggle"><img src="./assets/img/menu-icon.png" id="menu-icon" alt="Hamburger menu toggle"></a></li>
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="./preston.html" class="active">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="./storm-center.html">Storm Center</a></li>
+                <li><a href="./gallery-7.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="content-container">
+        <h2 class="centered">Preston Idaho</h2>
+        <section class="hero">
+            <picture>
+                <source srcset="./assets/img/summary-md.jpg" media="(min-width: 32.5em) and (max-width: 60em)">
+                <source srcset="./assets/img/summary-lg.jpg" media="(min-width: 60em)">
+                <img src="./assets/img/summary-sm.jpg" alt="Hero Image">
+            </picture>
+            <div class="summary">
+                <h2>Weather Summary</h2>
+                <div class="summary-content">
+                    <div>
+                        <p>Currently: </p> <span class="span-right"><span id="temp-farenheight">38</span>F</span>
+                        <span>Cloudy</span>
+                    </div>
+                    <div>
+                        <p>Wind Chill: </p><span class="span-right" id="wind-chill"></span>
+                    </div>
+                    <div>
+                        <p>High: </p><span class="span-right"><span id="wind-speed">38</span>F</span>
+
+                    </div>
+                    <div>
+                        <p>Humidity: </p><span class="span-right">50%</span>
+
+                    </div>
+                    <div>
+                        <p>Wind Speed: </p><span class="span-right">5mph</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="five-day">
+            <h2>5 Day Forecast</h2>
+            <div class="forecast">
+                <div class="day">
+                    <div class="label">
+                        Mon
+                    </div>
+                    <div class="info">
+                        <img src="./assets/img/sunny.png" alt="Sunny Weather">
+                        <p>70F</p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="label">
+                        Tue
+                    </div>
+                    <div class="info">
+                        <img src="./assets/img/gusty.png" alt="Windy Weather">
+                        <p>75F</p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="label">
+                        Wed
+                    </div>
+                    <div class="info">
+                        <img src="./assets/img/lightning.png" alt="Storm Weather">
+                        <p>76F</p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="label">
+                        Thu
+                    </div>
+                    <div class="info">
+                        <img src="./assets/img/cloudy-sunny.png" alt="Cloudy Weather">
+                        <p>50F</p>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="label">
+                        Fri
+                    </div>
+                    <div class="info">
+                        <img src="./assets/img/sunny.png" alt="Sunny Weather">
+                        <p>49F</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="article">
+            <h2>Article</h2>
+            <img src="./assets/img/snow.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Hic veritatis nemo animi laborum maxime eos ipsa voluptate quibusdam ab ex ipsam alias aperiam itaque, similique eaque fugit exercitationem iste! Reprehenderit. Eaque nam assumenda deserunt, hic ratione eos fuga minima optio ut saepe commodi excepturi facilis laboriosam perferendis voluptate sint libero iste molestias! <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ducimus nam, aliquid reiciendis nesciunt sint ipsam culpa maxime aperiam commodi, aliquam quisquam iusto nemo saepe adipisci dolores. Libero, perspiciatis fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos, nulla, repellendus quidem eligendi ea aliquid rem itaque sit dolorum nostrum praesentium veritatis perferendis possimus et odio sequi. Velit, magnam!</p>
+        </section>
+        <section class="contact">
+            <h2>Contact Information</h2>
+
+            <div class="contact-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1611192522558!5m2!1sen!2sus" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contact-info">
+                    <p>Location: Preston, ID 83263</p>
+                    <p>Tel: (888)888-8888</p>
+                    <p>Email: sample@weatherittogether.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="content-container">
+
+        <p class="copyright">© <span id="current-year"></span> | Josh Smith | Utah | <a href="https://www.byui.edu/online">BYUI
+            Online Learning</a></p>
+        <p class="update">Last Updated: <span id="last-update"></span></p>  
+    </footer>
+
+    <script src="./assets/js/weather.js"></script>
+    <script src="./assets/js/windchill.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+<!-- 
+The home page contains a current weather story with corresponding image and information sections for all three towns or other content deemed appropriate by the student.
+The town weather pages contain weather conditions and other town information or relevant articles/content.
+-->
