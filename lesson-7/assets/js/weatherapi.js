@@ -1,5 +1,5 @@
 const KEY = '184a8d356da032cd8d665a8aed33b006';
-const URL = `http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=${KEY}`;
+const URL = `https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=${KEY}`;
 const DOM = {} || DOM;
 DOM.currentTemp = document.getElementById('current-temp');
 
