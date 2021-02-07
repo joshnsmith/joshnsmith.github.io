@@ -1,0 +1,43 @@
+@media (min-width: 32.5em) {
+  .content-container {
+    max-width: 50em;
+  }
+
+  header img {
+    position: absolute;
+    width: 80px;
+    left: 20px;
+    display: block;
+  }
+
+  .picture-card {
+    margin: 0px 0px;
+  }
+
+  header p {
+    font-size: 1.25em;
+  }
+
+  .hero img {
+    height: 350px;
+  }
+
+  .summary {
+    position: absolute;
+    opacity: 0.6;
+  }
+
+  .info img {
+    height: 50px;
+  }
+
+  .hero img {
+    height: 350px !important;
+  }
+
+  .town-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
