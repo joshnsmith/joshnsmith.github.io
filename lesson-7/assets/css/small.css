@@ -407,3 +407,12 @@ textarea {
 .town-container img {
   width: 100%;
 }
+
+.events {
+  padding: 20px;
+}
+
+.events li {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.1em;
+}
