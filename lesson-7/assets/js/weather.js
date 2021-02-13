@@ -14,7 +14,7 @@ ELEM.humidity = document.getElementById('humidity');
 ELEM.fiveForecast = document.getElementById('five-forecast');
 ELEM.weatherDesc = document.getElementById('weather-description');
 const KEY = '184a8d356da032cd8d665a8aed33b006';
-const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=${KEY}`;
+const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?id=${(page === 1) ? '5604473' : (page === 2) ? '5607916' : '5585010'}&units=imperial&appid=${KEY}`;
 const FORECAST_URL = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=${KEY}`;
 
 
@@ -119,6 +119,13 @@ function displayFiveday(labels, days) {
 
         ELEM.fiveForecast.appendChild(day);
     });
+}
+
+function getTownData() {
+    fetch('https://byui-cit230.github.io/weather/data/towndata.json')
+        .then(res => {
+            console.log(res);
+        })
 }
 
 /*
