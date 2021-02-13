@@ -57,12 +57,14 @@ function getWeatherData() {
     fetch(WEATHER_URL)
     .then((response) => response.json())
     .then((jsObject) => {
-        ELEM.tempFar.textContent = jsObject.main.temp;
-        ELEM.tempHigh.textContent = jsObject.main.temp_max;
-        ELEM.humidity.textContent = jsObject.main.humidity + '%';
-        ELEM.windSpeed.textContent = jsObject.wind.speed;
+        ELEM.tempFar.textContent = Math.ceil(jsObject.main.temp);
+        ELEM.tempHigh.textContent = Math.ceil(jsObject.main.temp_max);
+        ELEM.humidity.textContent = Math.ceil(jsObject.main.humidity) + '%';
+        ELEM.windSpeed.textContent = Math.ceil(jsObject.wind.speed) + "mph";
         ELEM.weatherDesc.textContent = jsObject.weather[0].description;
         ELEM.weatherDesc.style.textTransform = "capitalize";
+
+        document.getElementById('wind-chill').innerHTML = calcWindChill(jsObject.main.temp, jsObject.wind.speed);
     });
 }
 
