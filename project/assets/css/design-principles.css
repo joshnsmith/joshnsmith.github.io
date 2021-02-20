@@ -1,0 +1,112 @@
+body {
+  background-color: #fff;
+  margin: 10px 15%;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    margin: 0;
+  }
+}
+
+header {
+  background-color: #2b3a67;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    border-radius: 0px;
+  }
+}
+
+header h1 {
+  /* font-family: "Yusei Magic", sans-serif; */
+  font-size: 3em;
+  padding: 0px;
+  margin: 10px;
+  color: #1c77c3;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: #bfd7ea;
+}
+
+main {
+  padding-top: 1em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 1500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+section {
+  background-color: #444;
+  margin: 1em;
+  text-align: center;
+  border-radius: 20px;
+}
+
+section h2 {
+  text-align: center;
+  color: #0066ff;
+  font-family: "Nunito", sans-serif;
+}
+
+section a {
+  color: #bfd7ea;
+}
+
+section img {
+  width: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  section img {
+    width: 70%;
+  }
+}
+
+section p {
+  color: #bfd7ea;
+  padding: 1em;
+  text-align: left;
+}
+
+footer {
+  background-color: #2b3a67;
+  border-radius: 10px;
+  text-align: center;
+  color: #bfd7ea;
+  font-family: "Quicksand", sans-serif;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  footer {
+    border-radius: 0px;
+  }
+}
+
+footer a {
+  color: #bfd7ea;
+}
+
+footer .update {
+  color: #ffb563;
+  font-weight: bold;
+}
+
+footer #last-update {
+  font-weight: normal;
+}

@@ -1,0 +1,415 @@
+/* #region native-html */
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 0px;
+    background: url("../images/cozumel.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    height: 35vh;
+}
+
+main {
+    background-color: rgba(191,219,247,0.80);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.712);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type=submit] {
+width: 100%;
+background-color: #333333;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 20px;
+}
+
+input[type=submit]:hover {
+background-color: #3f3f3f;
+}
+
+/* #endregion */
+
+/* #region font-styles */
+.h1 {
+    padding: 5px 10px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #ef5b5b;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+.h2 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ef5b5b;
+}
+
+.h3 {}
+
+.p1 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 17px;
+    /* font-weight: 600; */
+    padding: 5px;
+    margin: 0px;
+}
+.p2 {
+    font-family: 'Truculenta', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* #endregion */
+
+/* #region utilities */
+.b1 {
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+    text-decoration: none;
+    max-width: 200px;
+}
+
+.a1 {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(168, 168, 168);
+}
+
+.a1:hover {
+    color: #fff;
+}
+
+.mt50{
+    margin-top: 50px;
+}
+
+.mt200{
+    margin-top: 2%;
+}
+
+.mtb50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mtb25{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.m50 {
+    margin: 50px;
+}
+
+.not-home {
+    height: 30vh !important;
+}
+
+.active {
+    color: #fff !important;
+}
+
+/* #endregion */
+
+/* #region navigation */
+
+
+/* 
+.nav-container .navbar ul .close span {
+    font-size: 40px;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.nav-container .navbar .icon-bar {
+    padding: 18px 8px;
+    width: 50px;
+    height: 60px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.nav-container .navbar .icon-bar i {
+    background-color: #ffffff;
+    height: 2px;
+}
+
+.nav-container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.nav-container .navbar ul .close {
+    display: block;
+}
+
+.nav-container .navbar .icon-bar {
+    display: flex;
+}
+
+.nav-container .navbar ._Menus-show {
+    left: 0;
+}
+
+.nav-container .logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.nav-container .navbar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+}
+
+.nav-container .navbar ul {
+-ms-flex-wrap: nowrap;
+flex-wrap: nowrap;
+position: fixed;
+left: 100%;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+background: #ffffff;
+width: 100%;
+height: 100%;
+overflow: auto;
+-webkit-transition: left .3s;
+-o-transition: left .3s;
+transition: left .3s;
+}
+
+.nav-container .navbar ul li a {
+padding: 10px;
+font-size: 16px;
+height: auto;
+line-height: normal;
+color: #555555;
+} */
+
+/* #endregion */
+
+/* #region images */
+
+.logo {
+    max-width: 250px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media img{
+    max-width: 250px;
+}
+.imgSocial {
+    width: 10%;
+}
+
+/* #endregion */
+
+/* #region home */
+
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-column-gap: 5px;
+}
+
+.card {
+box-shadow: 2px 2px 8px 2px #d3d3d3;
+border-radius: 15px;
+opacity: .9;
+text-align: center;
+background-color: #fff;
+/* margin: 10px; */
+margin-bottom: 5%;
+margin-left: 2%;
+/* min-width: 250px; */
+/* width: 50%;
+margin: auto; */
+}
+
+.card img{
+width: 90%;
+border-radius: 0px;
+box-shadow: none;
+}
+
+.card:hover {
+opacity: 0.8;
+}
+
+.weather-info {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.weather-info p {
+    margin: 10px;
+}
+
+/* #endregion */
+
+/* #region reservations */
+
+.form-reservation {
+    border-radius: 15px;
+    /* background-color: #f2f2f2; */
+    color: #3f3f3f;
+    padding: 20px;
+    margin: auto;
+}
+
+.submit-reserve {
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+    width: 50% !important;
+}
+
+/* #endregion */
+
+/* #region rentals */
+
+.img-rental {
+    width: 12%;
+    box-shadow: 5px 5px 8px 5px #d3d3d3;
+    border-radius: 15px;
+    margin-left: 1%;
+}
+
+.img-rental:hover {
+    opacity: 0.8;
+}
+
+
+
+#tbl-rentals {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0px auto
+}
+
+#tbl-rentals td, #tbl-rentals th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tbl-rentals tr:nth-child(even){background-color: #f2f2f2;}
+#tbl-rentals tr:nth-child(odd){background-color: #9e9e9e;}
+
+#tbl-rentals tr:hover {background-color: #ddd;}
+
+#tbl-rentals th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+.table-container {
+    width: 100%;
+    overflow: scroll;
+}
+
+/* #endregion */
+
+/* #region contact */
+
+.map {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+/* #endregion */
+
+/* #region tours */
+
+.adventures {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* margin: auto; */
+}
+
+.tour-card {
+    padding: 5%;
+}
+
+/* #endregion */

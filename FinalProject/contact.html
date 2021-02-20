@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Contact | Scoots</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css"> -->
+    <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/small.css">
+    <link rel="stylesheet" href="./assets/css/medium.css">
+    <link rel="stylesheet" href="./assets/css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans&family=Truculenta&family=Zilla+Slab&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">        
+            <div class="icon-bar" onclick="showCollapsedMenu()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="hideCollapsedMenu()">×</span></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header class="not-home">
+      <div class="h1">Contact Us</div>
+    </header>
+    <!--The div element for the map -->
+    <main>
+      <h2 class="h2">Address</h2>
+      <div class="map">
+        <p class="p1">Boulevard Aeropuerto Cozumel s/n, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8787350659363!2d-86.93229058474002!3d20.51119678628111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5846a9c56ac7%3A0x8ab8d136e4473589!2sCozumel%20International%20Airport!5e0!3m2!1sen!2sus!4v1613782450925!5m2!1sen!2sus" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="map">
+        <p class="p1">Centro, San Miguel de Cozumel, Quintana Roo, Mexico</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.938200830524!2d-86.95865498474008!3d20.508759486282486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59c46e7f3811%3A0x68b45730273fd699!2sCruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1613782489195!5m2!1sen!2sus" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <h2 class="h2">Comments / Concerns</h2>
+      <div class="form-reservation mt50">
+        <form action="/FinalProject2/thanks.html">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+  
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="example@email.com">
+  
+          <label for="info">Additional Information</label>
+          <input type="text" id="info" name="info" placeholder="">
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <h2 class="h2">Reach out!</h2>
+      <div class="social-media">
+        <div class="m50">
+          
+          <p class="p1">(373) 802-2729</p>
+          <p class="p1">travel@scoots.com</p>
+        </div>
+        <a href="https://facebook.com"><img src="./assets/images/social.png" alt=""></a>
+      </div>
+    </main>
+
+    <footer>
+      <p class="p1">Josh Smith | BYUI CS246 | Final Project</p>
+      <a class="a1" href="./resources.html">References</a>
+    </footer>
+    
+  </body>
+</html>

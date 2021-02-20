@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Reservations | Scoots</title>
+    <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/small.css">
+    <link rel="stylesheet" href="./assets/css/medium.css">
+    <link rel="stylesheet" href="./assets/css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans&family=Truculenta&family=Zilla+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">        
+            <div class="icon-bar" onclick="showCollapsedMenu()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="hideCollapsedMenu()">×</span></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./reservations.html" class="active">Reservations</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="not-home">
+      <div class="h1">Reservations</div>
+    </header>
+    <main>
+      <div class="form-reservation">
+        <form action="./thanks.html">
+          <label for="date">Reservation date</label>
+          <input type="text" id="date" name="date" placeholder="02/19/2021..">
+      
+          <label for="rentalType">Rental Type</label>
+          <select id="rentalType" name="rentalType">
+            <option value="honda-metro">Honda Metro Scooter</option>
+            <option value="honda-dio">Honda Dio Scooter</option>
+            <option value="honda-pcx">Honda PCX150</option>
+            <option value="honda-pioneer">Honda Pioneer ATV</option>
+            <option value="jeep-4">Jeep Wrangler - 4 door with a/c</option>
+            <option value="jeep-2">Jeep Wrangler - 2 door</option>
+          </select>
+
+          <label for="number">Number</label>
+          <input type="text" id="number" name="number" placeholder="0123456789">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="example@email.com">
+
+          <label for="home">Home State/Country</label>
+          <input type="text" id="home" name="home" placeholder="example@email.com">
+
+          <label for="cruise">Cruise Line</label>
+          <input type="text" id="cruise" name="cruise" placeholder="example@email.com">
+
+          <label for="info">Additional Information</label>
+          <input type="text" id="info" name="info" placeholder="">
+      
+          <input class="submit-reserve" type="submit" value="Submit">
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="p1">Josh Smith | BYUI CS246 | Final Project</p>
+      <a class="a1" href="./resources.html">References</a>
+    </footer>
+  </body>
+</html>

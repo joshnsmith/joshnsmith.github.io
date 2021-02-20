@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Scoots</title>
+    <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/small.css">
+    <link rel="stylesheet" href="./assets/css/medium.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans&family=Truculenta&family=Zilla+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">        
+            <div class="icon-bar" onclick="showCollapsedMenu()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="hideCollapsedMenu()">×</span></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="not-home">
+      <div class="h1">Rentals</div>
+    </header>
+    <main>
+      <h2 class="h2">Vehicles</h2>
+      <div class="container">
+        <div class="card-holder">
+          <div class="card">
+            <img class="img-rental" src="./assets/images/honda_metropolitan.png" alt="logo">
+            <p class="p1">Honda Metro Scooter</p>
+          </div>
+          <div class="card">
+            <img class="img-rental" src="./assets/images/honda_dior.png" alt="logo">
+            <p class="p1">Honda Dio Scooter</p>
+          </div>
+          <div class="card">
+            <img class="img-rental" src="./assets/images/honda_pcx150.png" alt="logo">
+            <p class="p1">Honda PCX150 Scooter</p>
+          </div>
+          <div class="card">
+            <img class="img-rental" src="./assets/images/honda_pioneer.png" alt="logo">
+            <p class="p1">Honda Pioneer ATV</p>
+          </div>
+          <div class="card">
+            <img class="img-rental" src="./assets/images/jeep_4_door.png" alt="logo">
+            <p class="p1">Jeep Wrangler - 4 door with a/c</p>
+          </div>
+          <div class="card">
+            <img class="img-rental" src="./assets/images/jeep_2_door.png" alt="logo">
+            <p class="p1">Jeep Wrangler - 2 door</p>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2">Pricing</h2>
+      <div class="table-container">
+        <table id="tbl-rentals">
+          <thead>
+            <tr>
+              <th colspan="6">Max Persons and Price Chart</th>
+            </tr>
+            <tr>
+              <th colspan="2">Options</th>
+              <th colspan="2">Reservation</th>
+              <th colspan="2">Walk in</th>
+            </tr>
+            <tr>
+              <th>Rental Type</th>
+              <th>Max. Persons</th>
+              <th>Half Day (3 hrs)</th>
+              <th>Full Day</th>
+              <th>Half Day (3 hrs)</th>
+              <th>Full Day</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Honda Metro Scooter</td>
+              <td>1</td>
+              <td class="reservedHalf">$ 20</td>
+              <td class="reservedFull">$ 30</td>
+              <td class="walkedHalf">$ 25</td>
+              <td class="walkedFull">$ 35</td>
+            </tr>
+            <tr>
+              <td>Honda Dio Scooter</td>
+              <td>2</td>
+              <td class="reservedHalf">$ 30</td>
+              <td class="reservedFull">$ 40</td>
+              <td class="walkedHalf">$ 35</td>
+              <td class="walkedFull">$ 45</td>
+            </tr>
+            <tr>
+              <td>Honda PCX150 Scooter</td>
+              <td>2</td>
+              <td class="reservedHalf">$ 40</td>
+              <td class="reservedFull">$ 50</td>
+              <td class="walkedHalf">$ 45</td>
+              <td class="walkedFull">$ 55</td>
+            </tr>
+            <tr>
+              <td>Honda Pioneer ATV</td>
+              <td>4</td>
+              <td class="reservedHalf">$ 50</td>
+              <td class="reservedFull">$ 70</td>
+              <td class="walkedHalf">$ 60</td>
+              <td class="walkedFull">$ 80</td>
+            </tr>
+            <tr>
+              <td>Jeep Wrangler - 4 door with a/c</td>
+              <td>5</td>
+              <td class="reservedHalf">$ 70</td>
+              <td class="reservedFull">$ 100</td>
+              <td class="walkedHalf">$ 85</td>
+              <td class="walkedFull">$ 125</td>
+            </tr>
+            <tr>
+              <td>Jeep Wrangler - 2 door</td>
+              <td>4</td>
+              <td class="reservedHalf">$ 60</td>
+              <td class="reservedFull">$ 85</td>
+              <td class="walkedHalf">$ 70</td>
+              <td class="walkedFull">$ 90</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="6">Prices include Tax</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <a class="b1 mtb25" href="./reservations.html">Reserve Now</a>
+    </main>
+    
+    <footer>
+      <p class="p1">Josh Smith | BYUI CS246 | Final Project</p>
+      <a class="a1" href="">References</a>
+    </footer>
+  </body>
+</html>

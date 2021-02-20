@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Tours | Scoots</title>
+    <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/small.css">
+    <link rel="stylesheet" href="./assets/css/medium.css">
+    <link rel="stylesheet" href="./assets/css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans&family=Truculenta&family=Zilla+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="navbar">        
+            <div class="icon-bar" onclick="showCollapsedMenu()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="hideCollapsedMenu()">×</span></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./tours.html" class="active">Tours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="not-home">
+      <div class="h1">Tours</div>
+    </header>
+    <main>
+      <section class="adventures">
+        <div class="card tour-card">
+          <h2 class="h2">Off Road Into the Jungle</h2>
+          <img class="img-tour" src="./assets/images/offroad.jpg" alt="offroad">
+          <p class="p1">
+            Explore the offroad and into the jungle. Explore the wild and find the secrets hidden.</p>
+            <a class="b1" href="./reservations.html">Reserve Now</a>
+        </div>
+      </section>
+      <section class="adventures">
+        <div class="card tour-card">
+          <h2 class="h2">Beach it up!</h2>
+          <img class="img-tour" src="./assets/images/beach.jpg" alt="beach">
+          <p class="p1">Enjoy the sand as you are cuising down our island's white beautiful sands. Find quiet and hidden coves and even get in the water to cool off! This excursion includes a high cliff to jump off into the water. Bring your swim suit! </p>
+          <a class="b1" href="./reservations.html">Reserve Now</a>
+        </div>
+      </section>
+      <section class="adventures">
+        <div class="card tour-card">
+          <h2 class="h2">Discover Downtown</h2>
+          <img class="img-tour" src="./assets/images/downtown.jpg" alt="downtown">
+          <p class="p1">Enjoy the sand as you are cuising down our island's white beautiful sands. Find quiet and hidden coves and even get in the water to cool off! This excursion includes a high cliff to jump off into the water. Bring your swim suit! </p>
+          <a class="b1" href="./reservations.html">Reserve Now</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="p1">Josh Smith | BYUI CS246 | Final Project</p>
+      <a class="a1" href="./resources.html">References</a>
+    </footer>
+  </body>
+</html>

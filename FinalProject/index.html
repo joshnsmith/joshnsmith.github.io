@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Home | Scoots</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/small.css">
+    <link rel="stylesheet" href="./assets/css/medium.css">
+    <link rel="stylesheet" href="./assets/css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans&family=Truculenta&family=Zilla+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="navbar">        
+            <div class="icon-bar" onclick="showCollapsedMenu()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="hideCollapsedMenu()">×</span></li>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./tours.html">Tours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+      <div class="h1">Scoots</div>
+      <div class="p2">Your Supplier of fun and transportation!</div>
+
+      <a class="b1 mt200" href="./reservations.html">Reserve Now!</a>
+    </header>
+
+    <main>
+      <h1 class="h2">Our Selection</h1>
+      <div class="card-holder">
+        <div class="card">
+          <img src="./assets/images/honda_metropolitan.png" alt="logo">
+          <p class="p1">Honda Metro Scooter</p>
+        </div>
+        <div class="card">
+          <img src="./assets/images/honda_dior.png" alt="logo">
+          <p class="p1">Honda Dio Scooter</p>
+        </div>
+        <div class="card">
+          <img src="./assets/images/honda_pcx150.png" alt="logo">
+          <p class="p1">Honda PCX150 Scooter</p>
+        </div>
+      </div>
+      <a class="b1" href="./rentals.html">View More</a>
+
+      <div class="weather-info">
+        <h2 class="h2">Current Weather</h2>
+        <p class="p1">Current Temps: <span id="temp">74</span>°F</p>
+        <p class="p1">Conditions: <span id="condition">Cloudy</span></p>
+        <p class="p1">Humidity: <span id="humidity">8</span>%</p>
+        <p class="p1">Forecasted 5 day: <span id="five">84</span>°F</p>
+      </div>
+
+      <div class="social-media">
+        <h2 class="h2">Contact Us</h2>
+        <div class="m50">
+          <p class="p1">(373) 802-2729</p>
+          <p class="p1">travel@scoots.com</p>
+        </div>
+        <a href="https://facebook.com"><img src="./assets/images/social.png" alt=""></a>
+      </div>
+    </main>
+
+    <footer>
+      <p class="p1">Josh Smith | BYUI CS246 | Final Project</p>
+      <a class="a1" href="./resources.html">References</a>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/weather.js"></script>
+  </body>
+</html>
