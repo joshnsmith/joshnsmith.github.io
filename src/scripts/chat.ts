@@ -1,5 +1,6 @@
 import profile from '../../content/josh-profile.json';
 import { apiUrl } from './api';
+import { renderAnswerText } from './answer-format';
 import './email';
 import { createElement, ArrowUpRight } from 'lucide';
 type GalleryImage = { src: string; thumbnail: string; alt: string; caption: string };
@@ -121,7 +122,7 @@ async function ask(question: string) {
     }
   }
   if (controller !== chatVersion) return;
-  paragraph.textContent = answer.text;
+  renderAnswerText(paragraph, answer.text);
   gallery.hidden = !gallery.childElementCount;
   links.hidden = false;
   source.textContent = live ? 'AI-generated' : 'From Josh’s approved portfolio answers · Live AI is unavailable.';
