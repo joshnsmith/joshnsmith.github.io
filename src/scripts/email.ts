@@ -1,3 +1,4 @@
+import './navigation';
 let emailStatusTimer: ReturnType<typeof setTimeout>;
 const emailButton = document.querySelector<HTMLButtonElement>('#copy-email')!;
 const emailStatus = document.querySelector<HTMLElement>('#email-status')!;

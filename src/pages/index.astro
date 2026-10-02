@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
+import MobileMenu from '../components/MobileMenu.astro';
 import BrandIcon from '../components/BrandIcon.astro';
 import { siGmail, siGithub } from 'simple-icons';
 import { SendHorizontal, Link, ArrowUpRight, Plus, UserRound, PanelsTopLeft, CodeXml, FileText } from 'lucide';
@@ -23,7 +24,8 @@ const prompts = [
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <aside class="sidebar">
+  <aside class="sidebar" id="portfolio-sidebar" aria-label="Portfolio navigation">
+    <button type="button" class="sidebar-close" aria-label="Close navigation">Close</button>
     <a class="brand" href="/" aria-label="Josh Smith GPT home"><span>Josh Smith <span class="light">GPT</span><small>Get to know me</small></span></a>
     <button class="new-chat" id="new-chat"><Icon node={Plus} /> New conversation <Icon node={ArrowUpRight} size={14} class="shortcut" /></button>
     <p class="nav-label">EXPLORE</p>
@@ -32,7 +34,7 @@ const prompts = [
     <a class="profile" href="/hello/"><img src="/profile-pictures/IMG_2971.jpg" alt="Josh Smith" /><span><strong>Josh Smith</strong><small>Say hello</small></span><Icon node={ArrowUpRight} size={14} class="shortcut" /></a>
   </aside>
   <div class="workspace">
-    <header class="topbar"><span>Portfolio <span class="slash">/</span> <strong>Learn about me</strong></span><div class="header-actions"><a href="https://github.com/joshnsmith" target="_blank" rel="noopener noreferrer">GitHub <Icon node={ArrowUpRight} size={14} /></a><a class="resume-cta" href="https://joshnsmith.github.io/resume/">View resume <Icon node={Link} size={16} /></a></div></header>
+    <header class="topbar"><MobileMenu /><span>Portfolio <span class="slash">/</span> <strong>Learn about me</strong></span><div class="header-actions"><a href="https://github.com/joshnsmith" target="_blank" rel="noopener noreferrer">GitHub <Icon node={ArrowUpRight} size={14} /></a><a class="resume-cta" href="https://joshnsmith.github.io/resume/">View resume <Icon node={Link} size={16} /></a></div></header>
     <main id="main">
       <section class="welcome" id="welcome">
         <div class="eyebrow"><span></span> AI Resume Interface</div>
@@ -45,7 +47,7 @@ const prompts = [
       <div class="composer-area"><form id="chat-form" class="composer"><label class="sr-only" for="question">Ask about Josh</label><textarea id="question" rows="1" maxlength="500" placeholder="Ask anything about Josh…" required></textarea><div class="composer-bottom"><span>Josh Smith GPT <span class="demo-pill">Portfolio preview</span></span><button type="submit" id="send" aria-label="Send question"><Icon node={SendHorizontal} size={19} /></button></div></form><p class="disclosure">A little biased. It is my resume, after all. Questions? <a href="/hello/">Say hello.</a></p></div>
       <noscript><p class="noscript">Enable JavaScript to explore the conversation, or <a href="/resume/index.html">read Josh’s resume</a>.</p></noscript>
     </main>
-    <footer><span>© {new Date().getFullYear()} Josh Smith</span><div class="footer-personal"><nav class="social-links" aria-label="Social links"><button type="button" id="copy-email" aria-label="Copy email address" title="Copy joshsmithsp@gmail.com"><BrandIcon path={siGmail.path} /></button><a href="https://github.com/joshnsmith" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub"><BrandIcon path={siGithub.path} /></a><a href="https://www.linkedin.com/in/joshnathansmith/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn"><BrandIcon /></a></nav><span>Built with passion, curiosity, and Diet Mtn. Dew</span><span id="email-status" class="email-status" role="status" aria-live="polite"></span></div></footer>
+    <footer><span>© {new Date().getFullYear()} Josh Smith</span><div class="footer-personal"><nav class="social-links" aria-label="Social links"><span class="email-copy"><span id="email-status" class="email-status" role="status" aria-live="polite"></span><button type="button" id="copy-email" aria-label="Copy email address" title="Copy joshsmithsp@gmail.com"><BrandIcon path={siGmail.path} /></button></span><a href="https://github.com/joshnsmith" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub"><BrandIcon path={siGithub.path} /></a><a href="https://www.linkedin.com/in/joshnathansmith/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn"><BrandIcon /></a></nav><span>Built with passion, curiosity, and Diet Mtn. Dew</span></div></footer>
   </div>
   <script>import '../scripts/chat.ts';</script>
 </body>
