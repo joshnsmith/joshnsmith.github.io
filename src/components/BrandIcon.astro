@@ -1,0 +1,5 @@
+---
+interface Props { path?: string; }
+const { path } = Astro.props;
+---
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">{path ? <path d={path} /> : <><rect x="2" y="2" width="20" height="20" rx="2" /><text x="5" y="18" fill="white" font-family="Arial,sans-serif" font-size="17" font-weight="bold">in</text></>}</svg>

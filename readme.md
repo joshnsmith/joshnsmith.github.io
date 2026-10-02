@@ -1,39 +1,30 @@
-# Course Repository from WDD 230
+# Josh GPT
 
-**Course:** WDD 230
+A conversational portfolio built with Astro and plain CSS. The frontend is static on GitHub Pages. Live portfolio chat uses Cloudflare Workers AI with approved answers as a fallback. See AI-SETUP.md for account connection, free-tier limits, and deployment.
 
-**Instructor:** Mike Odom
+## Local development
 
-**Student:** Josh Smith
+Use Node.js 22.19 or newer and run:
 
-**Contact:** joshsmithsp@gmail.com
+```sh
+npm install
+npm run dev
+```
 
-## Links
+Open http://localhost:4321. `npm run build` generates the static site in `dist/`; `npm run preview` serves the built version.
 
-[Course Portal Homepage](https://joshnsmith.github.io)
+- `src/pages/index.astro`: homepage structure and suggested questions
+- `src/styles/global.css`: responsive design
+- `content/josh-profile.json`: public facts and fallback answers
+- `src/scripts/chat.ts`: live chat and fallback behavior
+- `scripts/prepare-assets.mjs`: copies the existing résumé and linked legacy projects into generated `public/` for development and builds
 
-[BYUI Online Learning](https://www.byui.edu/online)
+The existing root `index.html` is retained as the legacy page; the new homepage source is `src/pages/index.astro`. The existing modified résumé source is preserved. Generated `public/` should not be edited; update the original assets instead.
 
-### Course Portal Validation links
+## GitHub Pages
 
-[Google Fonts Choices](https://fonts.google.com/specimen/Quicksand?preview.text=WDD%20230&preview.text_type=custom&sidebar.open=true&selection.family=Quicksand:wght@300|Roboto+Slab:wght@600|Ubuntu)
+When ready to publish, commit the source and lockfile, choose **GitHub Actions** in repository Settings → Pages, then manually run **Deploy Josh GPT** in Actions. The workflow does not publish automatically on push. No deployment was performed during implementation.
 
-[Color Scheme](https://coolors.co/ffb563-36827f-e84855-bfd7ea-2b3a67)
+## Content
 
-[Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoshnsmith.github.io%2F)
-
-[Wave](https://wave.webaim.org/report#/https://joshnsmith.github.io)
-
-### Assets References
-
-**Design Principles**
-
-All were screenshots on my phone.
-
-**Site Plan**
-
-[Logo](https://www.iconfinder.com/icons/4908723/cloud_cold_rain_rainy_season_weather_winter_icon)
-
-[Hamburger](https://www.iconfinder.com/icons/1891012/blue_cercle_hamburger_list_mavigation_menu_stack_icon)
-
-Screenshot from [Coolors](https://coolors.co/add7f6-d6e9ff-87bfff-1f87ff-00397a)
+Update `content/josh-profile.json` with verified professional details before expanding the content. The profile covers professional experience, projects, education, and personal interests. Voice and conversation settings live in `backend/src/voice.ts`. Conversations live only in the current page and reset on reload or New conversation.

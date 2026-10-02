@@ -1,0 +1,7 @@
+{
+  "name": "josh-portfolio-backend",
+  "compatibility_date": "2026-10-02",
+  "main": "src/index.ts",
+  "ai": { "binding": "AI", "remote": true },
+  "observability": { "enabled": false }
+}

@@ -1,0 +1,241 @@
+{
+  "name": "Josh Smith",
+  "facts": [
+    "Josh Smith is a Senior Developer and former Engineering Manager at Data Connector.",
+    "Josh enjoys building useful software, solving problems, and helping people do their best work. He brings a hands-on approach, curiosity, and experience working closely with teams and customers.",
+    "Josh has a passion to create, a curiosity to explore, and a drive to achieve.",
+    "Portfolio technologies: Astro, HTML, CSS, and JavaScript.",
+    "Email: joshsmithsp@gmail.com.",
+    "GitHub: https://github.com/joshnsmith.",
+    "LinkedIn: https://www.linkedin.com/in/joshnathansmith/.",
+    "Resume: https://joshnsmith.github.io/resume/.",
+    "Data Connector: former Engineering Manager, remote position; role began May 2025.",
+    "At Data Connector, Josh led developers, established structured code reviews, supported technical growth, and aligned sprint commitments with business goals.",
+    "At Data Connector, Josh supported SOC 2 compliance through Vanta alongside engineering and customer support responsibilities.",
+    "At Data Connector, Josh developed and maintained integrations across SaaS APIs, databases, and cloud storage.",
+    "At Data Connector, Josh improved the shared Python connector runtime by resolving S3 pagination limits, authentication retry loops, transfer isolation, and batch ordering issues, with regression coverage.",
+    "At Data Connector, Josh delivered OAuth-scoped Model Context Protocol (MCP) tools for connector discovery, account access, and read-only data previews.",
+    "At Data Connector, Josh investigated customer sync failures and data discrepancies with SQL and pipeline diagnostics, addressing filtering, mapping, and connector behavior.",
+    "At Data Connector, Josh coordinated application and API changes through development and UAT, validated automated checks, and prepared production release pull requests.",
+    "DataConnector.com: Josh built website applications and technology from the ground up, developed data integrations, improved connector reliability, and delivered MCP tools.",
+    "Xantie, American Fork, Utah: Sr. Developer, May 2021–May 2025. Client projects included Fisher Investments, VIS AutoXLR8, and KK Packaging.",
+    "For Fisher Investments at Xantie, Josh developed workflows with SQL, Azure Data Factory, C# REST APIs, C# functions, and microservices.",
+    "For Fisher Investments at Xantie, Josh worked on a Scrum team delivering production code every two weeks.",
+    "For Fisher Investments at Xantie, Josh optimized ADF pipelines to automate workflows, reduce pipeline failures, and cut error debugging time by more than 50%.",
+    "For Fisher Investments at Xantie, Josh built automated cash transfer and securities processing flows with ADF, SFTP, REST APIs, and SOC 2 compliant logging.",
+    "For Fisher Investments at Xantie, Josh implemented monitoring and alerting and developed Python and Node.js integrations for ingestion through SFTP and APIs.",
+    "For VIS AutoXLR8 at Xantie, Josh developed a data-validation testing and automation tool using C#, ASP.NET, Python runners, and a Razor frontend.",
+    "For KK Packaging at Xantie, Josh worked on an Angular full stack project, Shopify order extraction, and AWS Elastic Beanstalk.",
+    "Xantie: Software Engineer, October 2020–May 2021. Client projects included Bluestep and Scenic View Academy.",
+    "For Bluestep at Xantie, Josh worked on a platform build using JavaScript and TypeScript.",
+    "For Scenic View Academy at Xantie, Josh built a full stack school attendance application using React, SQL Server, and a Microsoft web application.",
+    "Smart Finger Apps: Software Engineer, March 2018–October 2020. Josh developed automated trading software with brokerage API integrations using Python, C#, .NET, Node.js, Angular, and SQL.",
+    "Smart Wave Solar: Junior Software Engineer, March 2020–October 2020. Josh automated CAD workflows and state code submissions with Python and API integrations.",
+    "Education: BYU–Idaho, Rexburg, Idaho; Associate’s Degree in Applied Technology, December 2021.",
+    "Engineering leadership: technical project leadership, requirements gathering, code reviews, agile delivery, standups, release coordination, and customer support.",
+    "Data engineering: ETL/ELT pipelines, ingestion, transformation, synchronization, validation, mapping, filtering, and troubleshooting.",
+    "SQL and databases: advanced SQL, SQL Server, PostgreSQL, Snowflake, Oracle, and investigating data discrepancies.",
+    "Backend development: C#, .NET, Python, Node.js, REST APIs, microservices, serverless functions, and API management.",
+    "Frontend development: React, Angular, JavaScript, TypeScript, HTML, CSS, and full stack web applications.",
+    "Cloud platforms: AWS, Azure, Azure Data Factory, S3, and cloud application hosting.",
+    "AI and automation: AI-assisted software development, automated connector development, AI and machine learning applications, and MCP integrations.",
+    "Testing and reliability: automated and regression testing, data-driven validation, QA automation, monitoring, alerting, and root cause analysis.",
+    "Security and compliance: SOC 2 compliance support, Vanta, OAuth permissions and scopes, and compliance logging.",
+    "Integration technologies: SFTP, JSON, XML, third-party APIs, financial services integrations, brokerage APIs, and JavaScript PDF applications.",
+    "Additional technologies: Java, PHP, jQuery, Salesforce, and MVC.",
+    "Achievements and certifications: Eagle Scout, COMPTIA+, Networking and Cloud Certifications, and AWS Certifications.",
+    "Stationeers Calculator: work in progress.",
+    "Diddy Stock automation software: automated buying and selling futures.",
+    "Favorite foods and drinks: Reese’s peanut butter treats, chocolate ice cream, Diet Mtn. Dew, Diet Coke, BBQ, and Nerds Clusters.",
+    "Josh drives a Toyota Tacoma and is a homeowner.",
+    "Josh has a spouse and two children. As of October 2026, he has been married for eight years.",
+    "Josh enjoys camping, pickleball, soccer, football, drones, 3D printing, video games, and board games.",
+    "Josh is a Halo fan, enjoys Space Engineers, and loves technology.",
+    "Favorite color: orange.",
+    "Josh is the youngest of nine siblings. Two of his siblings have passed away.",
+    "Josh has not earned a bachelor’s degree yet. He plans to return to college to finish one.",
+    "Much of Josh’s learning has come from online videos, courses, personal experimentation, and professional experience.",
+    "Josh’s passion for coding began in a high school C# class. The class sparked his interest in experimenting, creating, and understanding how things work.",
+    "Josh graduated from high school in 2015 and wanted to start a career in coding, but initially struggled to get his foot in the door.",
+    "Josh worked with his dad as an electrician for about five years to make ends meet while pursuing his associate’s degree and starting a family.",
+    "After tiring of crawling through hot attics and avoiding spiders during electrical work, Josh studied coding at his computer for about four hours each evening after work.",
+    "During that period, Josh’s combined work and learning days were about 12–16 hours long. He landed a software job within about a year and a half of that focused learning effort.",
+    "The portfolio gallery includes Data Connector website and connector-selection screenshots, and Space Engineers plane and tank screenshots."
+  ],
+  "answers": {
+    "about": {
+      "text": "I’m Josh—a Senior Developer and former Engineering Manager at Data Connector. My passion for coding started in a high school C# class with a teacher older than the hills. That class sparked a curiosity that’s stuck with me: I love experimenting, creating, and figuring out how things work.\n\nMy path into software included electrical work with my dad and a lot of evenings spent learning to code. These days, I enjoy building useful software, solving problems, and helping teams do their best work.",
+      "links": [
+        [
+          "Explore projects",
+          "#projects"
+        ],
+        [
+          "Read resume",
+          "/resume/index.html"
+        ]
+      ]
+    },
+    "projects": {
+      "text": "A few projects I have worked on: DataConnector.com, Stationeers Calculator (still a work in progress), and Diddy Stock automation software, which automated buying and selling futures. My work at Data Connector spans applications, data integrations, connector reliability, and MCP tools.",
+      "links": [
+        [
+          "DataConnector.com ↗",
+          "https://dataconnector.com"
+        ]
+      ],
+      "images": [
+        {
+          "src": "/project-images/dataconnector_homepage.png",
+          "thumbnail": "/project-images/dataconnector_homepage.webp",
+          "alt": "Data Connector website homepage with reporting automation and integration diagram",
+          "caption": "Data Connector — website"
+        }
+      ]
+    },
+    "skills": {
+      "text": "I work with C#, .NET, Python, Node.js, SQL, REST APIs, React, Angular, JavaScript, and TypeScript. I’ve also worked with AWS, Azure, Azure Data Factory, data pipelines, automated testing, and OAuth-scoped MCP integrations. Beyond the code, I bring experience with engineering leadership, code reviews, release coordination, and customer support.",
+      "links": [
+        [
+          "Read resume",
+          "/resume/index.html"
+        ]
+      ]
+    },
+    "resume": {
+      "text": "My resume covers my work history, education, and professional experience. You can read it in the browser or download the PDF below.",
+      "links": [
+        [
+          "Open resume",
+          "/resume/"
+        ],
+        [
+          "Resume PDF ↗",
+          "/Joshua_Smith_Resume_2026.pdf"
+        ]
+      ]
+    },
+    "contact": {
+      "text": "You can email me at joshsmithsp@gmail.com or connect with me on LinkedIn.",
+      "links": [
+        [
+          "Email Josh ↗",
+          "mailto:joshsmithsp@gmail.com"
+        ],
+        [
+          "LinkedIn ↗",
+          "https://www.linkedin.com/in/joshnathansmith/"
+        ]
+      ]
+    },
+    "fallback": {
+      "text": "I’m not sure about that one. Want to ask about my work, projects, or hobbies?",
+      "links": []
+    },
+    "experience": {
+      "text": "I’m a Senior Developer and former Engineering Manager at Data Connector, where I led developers and worked on applications, data integrations, and MCP tools. Before that, I was a Sr. Developer at Xantie (May 2021–May 2025) and a Software Engineer there (October 2020–May 2021). Earlier, I worked at Smart Finger Apps and Smart Wave Solar.",
+      "links": [
+        [
+          "Read resume",
+          "/resume/"
+        ]
+      ]
+    },
+    "education": {
+      "text": "I earned an Associate’s Degree in Applied Technology from BYU–Idaho in December 2021. A lot of my learning has also come from online videos, courses, experimenting on my own, and professional experience. I haven’t earned a bachelor’s degree yet, but I plan to go back to college to finish one.",
+      "links": [
+        [
+          "Read resume",
+          "/resume/"
+        ]
+      ]
+    },
+    "leadership": {
+      "text": "As Engineering Manager at Data Connector, I led developers, established structured code reviews, supported technical growth, and aligned sprint commitments with business goals. I’ve also worked on requirements gathering, agile delivery, release coordination, and customer support.",
+      "links": [
+        [
+          "Read resume",
+          "/resume/"
+        ]
+      ]
+    },
+    "certifications": {
+      "text": "My background includes COMPTIA+, networking and cloud certifications, and AWS certifications. I’m also an Eagle Scout.",
+      "links": [
+        [
+          "Read resume",
+          "/resume/"
+        ]
+      ]
+    },
+    "personal": {
+      "text": "Outside coding, I enjoy camping, pickleball, soccer, football, drones, 3D printing, and board games. I’m a Halo fan and enjoy Space Engineers. My favorite color is orange, I drive a Toyota Tacoma, and I’m a homeowner with a spouse and two kids. As for snacks: Reese’s, chocolate ice cream, BBQ, and Nerds Clusters make the list—with Diet Mtn. Dew or Diet Coke nearby.",
+      "links": []
+    },
+    "family": {
+      "text": "I have a spouse and two kids, and I’m the youngest of nine siblings. Two of my siblings have passed away.",
+      "links": []
+    },
+    "stationeers": {
+      "text": "I’m working on a Stationeers Calculator. It’s still a work in progress.",
+      "links": []
+    },
+    "diddy": {
+      "text": "Diddy Stock automation software was a project that automated buying and selling futures.",
+      "links": []
+    },
+    "dataconnector": {
+      "text": "My work on DataConnector.com included website applications, SaaS and database integrations, improvements to a shared Python connector runtime, and OAuth-scoped MCP tools for discovery, account access, and read-only data previews. I also previously served as Engineering Manager there.",
+      "links": [
+        [
+          "DataConnector.com ↗",
+          "https://dataconnector.com"
+        ]
+      ],
+      "images": [
+        {
+          "src": "/project-images/dataconnector_homepage.png",
+          "thumbnail": "/project-images/dataconnector_homepage.webp",
+          "alt": "Data Connector website homepage with reporting automation and integration diagram",
+          "caption": "Data Connector — website"
+        },
+        {
+          "src": "/project-images/dataconnector_sample.png",
+          "thumbnail": "/project-images/dataconnector_sample.webp",
+          "alt": "Data Connector source-selection interface with app and database connectors",
+          "caption": "Data Connector — connector selection"
+        }
+      ]
+    },
+    "greeting": {
+      "text": "Hey! Glad you’re here. Want to talk code, projects, or life outside the keyboard?",
+      "links": []
+    },
+    "bachelors": {
+      "text": "I haven’t earned a bachelor’s degree yet. I do plan to go back to college to finish one, but much of my learning has come from online videos, courses, and professional experience. I earned my Associate’s Degree in Applied Technology from BYU–Idaho in December 2021.",
+      "links": []
+    },
+    "story": {
+      "text": "My interest in coding started in a high school C# class with a teacher older than the hills. I graduated in 2015 determined to get into software, but getting my foot in the door wasn’t easy. I worked with my dad as an electrician for about five years while pursuing my associate’s degree and starting a family.\n\nEventually, I’d had enough of sweaty attics and dodging spiders. I’d come home exhausted and spend about four hours at my computer learning to code. Those were long days—around 12–16 hours between work and studying—but within about a year and a half of that focused effort, I landed a software job. Curiosity has been a big part of my life ever since.",
+      "links": []
+    },
+    "spaceengineers": {
+      "text": "Space Engineers is one of the games I enjoy. Here are a couple of screenshots from my gallery—a plane and a tank.",
+      "links": [],
+      "images": [
+        {
+          "src": "/project-images/spaceengineers_plane.png",
+          "thumbnail": "/project-images/spaceengineers_plane.webp",
+          "alt": "Plane in flight in Space Engineers",
+          "caption": "Space Engineers — plane"
+        },
+        {
+          "src": "/project-images/spaceengineers_tank.png",
+          "thumbnail": "/project-images/spaceengineers_tank.webp",
+          "alt": "Tank in a mountainous landscape in Space Engineers",
+          "caption": "Space Engineers — tank"
+        }
+      ]
+    }
+  }
+}

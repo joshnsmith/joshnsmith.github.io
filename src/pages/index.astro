@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import BrandIcon from '../components/BrandIcon.astro';
+import { siGmail, siGithub } from 'simple-icons';
+import { SendHorizontal, Link, ArrowUpRight, Plus, UserRound, PanelsTopLeft, CodeXml, FileText } from 'lucide';
+const prompts = [
+  { icon: '01', title: 'Get to know me', detail: 'Learn about me', question: 'Tell me about Josh' },
+  { icon: '02', title: 'Explore my projects', detail: 'From ideas to working websites', question: 'What has Josh built?' },
+  { icon: '03', title: 'See what I work with', detail: 'Skills, tools, and technologies', question: 'What are Josh’s skills?' },
+  { icon: '04', title: 'Let’s connect', detail: 'Start a conversation with me', question: 'How can I contact Josh?' },
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Meet Josh Smith through a conversational portfolio. Explore his web projects, skills, and resume." />
+  <meta name="theme-color" content="#efefef" />
+  <title>Josh Smith GPT — Get to know me</title>
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Josh Smith GPT home"><span>Josh Smith <span class="light">GPT</span><small>Get to know me</small></span></a>
+    <button class="new-chat" id="new-chat"><Icon node={Plus} /> New conversation <Icon node={ArrowUpRight} size={14} class="shortcut" /></button>
+    <p class="nav-label">EXPLORE</p>
+    <nav aria-label="Portfolio"><button class="nav-item active" data-question="Tell me about Josh"><Icon node={UserRound} /> Learn about me</button><button class="nav-item" data-question="What has Josh built?"><Icon node={PanelsTopLeft} /> Selected projects</button><button class="nav-item" data-question="What are Josh’s skills?"><Icon node={CodeXml} /> Skills & tools</button><a class="nav-item" href="/resume/index.html"><Icon node={FileText} /> Resume <Icon node={Link} size={14} class="shortcut" /></a></nav>
+    <div class="sidebar-note"><small>Ask a question. Get to know the person behind the projects.</small></div>
+    <a class="profile" href="/hello/"><img src="/profile-pictures/IMG_2971.jpg" alt="Josh Smith" /><span><strong>Josh Smith</strong><small>Say hello</small></span><Icon node={ArrowUpRight} size={14} class="shortcut" /></a>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>Portfolio <span class="slash">/</span> <strong>Learn about me</strong></span><div class="header-actions"><a href="https://github.com/joshnsmith" target="_blank" rel="noopener noreferrer">GitHub <Icon node={ArrowUpRight} size={14} /></a><a class="resume-cta" href="https://joshnsmith.github.io/resume/">View resume <Icon node={Link} size={16} /></a></div></header>
+    <main id="main">
+      <section class="welcome" id="welcome">
+        <div class="eyebrow"><span></span> AI Resume Interface</div>
+
+        <h1>Hi, I’m Josh.<br /><span>What would you like to know?</span></h1>
+        <p class="intro">The projects, the skills, the person behind them.<br />Think of this as my portfolio—with a conversation.</p>
+        <div class="prompt-grid">{prompts.map(prompt => <button class="prompt-card" data-question={prompt.question} data-hello={prompt.icon === '04' ? 'true' : undefined}><span class="card-number">{prompt.icon}</span><Icon node={ArrowUpRight} size={16} class="card-arrow" /><strong>{prompt.title}</strong><small>{prompt.detail}</small></button>)}</div>
+      </section>
+      <section id="conversation" class="conversation" role="log" aria-live="polite" aria-label="Conversation with Josh Smith GPT" hidden></section>
+      <div class="composer-area"><form id="chat-form" class="composer"><label class="sr-only" for="question">Ask about Josh</label><textarea id="question" rows="1" maxlength="500" placeholder="Ask anything about Josh…" required></textarea><div class="composer-bottom"><span>Josh Smith GPT <span class="demo-pill">Portfolio preview</span></span><button type="submit" id="send" aria-label="Send question"><Icon node={SendHorizontal} size={19} /></button></div></form><p class="disclosure">A little biased. It is my resume, after all. Questions? <a href="/hello/">Say hello.</a></p></div>
+      <noscript><p class="noscript">Enable JavaScript to explore the conversation, or <a href="/resume/index.html">read Josh’s resume</a>.</p></noscript>
+    </main>
+    <footer><span>© {new Date().getFullYear()} Josh Smith</span><div class="footer-personal"><nav class="social-links" aria-label="Social links"><button type="button" id="copy-email" aria-label="Copy email address" title="Copy joshsmithsp@gmail.com"><BrandIcon path={siGmail.path} /></button><a href="https://github.com/joshnsmith" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub"><BrandIcon path={siGithub.path} /></a><a href="https://www.linkedin.com/in/joshnathansmith/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn"><BrandIcon /></a></nav><span>Built with passion, curiosity, and Diet Mtn. Dew</span><span id="email-status" class="email-status" role="status" aria-live="polite"></span></div></footer>
+  </div>
+  <script>import '../scripts/chat.ts';</script>
+</body>
+</html>
