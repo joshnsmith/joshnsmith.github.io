@@ -23,7 +23,7 @@ The existing root `index.html` is retained as the legacy page; the new homepage 
 
 ## GitHub Pages
 
-When ready to publish, commit the source and lockfile, choose **GitHub Actions** in repository Settings → Pages, then manually run **Deploy Josh GPT** in Actions. The workflow does not publish automatically on push. No deployment was performed during implementation.
+When ready to publish, commit the source and lockfile, choose **GitHub Actions** in repository Settings → Pages, then manually run **Deploy Josh GPT** in Actions. The workflow publishes only when manually triggered. The frontend is hosted at https://joshnsmith.github.io/ and the AI backend at https://josh-portfolio-backend.joshsmithsp.workers.dev. The PUBLIC_API_URL repository Actions variable connects the two.
 
 ## Content
 
